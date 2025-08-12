@@ -2,260 +2,148 @@
 <html lang="en">
    <head>
       <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Reyansh Goswami | Portfolio</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
       <style>
-         * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-         }
-
          body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f2f2f2;
-            color: #222;
-            line-height: 1.6;
-         }
-
-         a {
-            color: #0066cc;
-            text-decoration: none;
-         }
-
-         a:hover {
-            text-decoration: underline;
-         }
-
-         /* Header */
-         header {
-            background-color: #1e1e2f;
-            color: white;
-            padding: 60px 20px;
-            text-align: center;
-         }
-
-         header h1 {
-            font-size: 42px;
-            margin-bottom: 10px;
-         }
-
-         header p {
-            font-size: 18px;
-            color: #ccc;
-         }
-
-         section {
-            max-width: 960px;
-            margin: 40px auto;
-            background-color: white;
-            padding: 30px 40px;
-            border-radius: 8px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-         }
-
-         h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
-            border-left: 4px solid #1e1e2f;
-            padding-left: 10px;
-            color: #1e1e2f;
-         }
-
-         ul {
-            padding-left: 20px;
-         }
-
-         ul li {
-            margin-bottom: 8px;
-         }
-
-         .project {
-            margin-bottom: 25px;
-         }
-
-         .project-title {
-            font-weight: 600;
-            font-size: 17px;
-            margin-bottom: 5px;
-         }
-
-         table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-         }
-
-         th, td {
-            padding: 10px;
-            border: 1px solid #ccc;
-            text-align: left;
-         }
-
-         th {
-            background-color: #f4f4f4;
-         }
-
-         form {
-            margin-top: 15px;
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            max-width: 600px;
-         }
-
-         label {
-            font-weight: bold;
-         }
-
-         input[type="text"],
-         input[type="email"],
-         textarea {
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 1rem;
-         }
-
-         textarea {
-            resize: vertical;
-         }
-
-         button {
-            width: fit-content;
-            padding: 10px 20px;
-            background-color: #1e1e2f;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 1rem;
-            cursor: pointer;
-         }
-
-         button:hover {
-            background-color: #333356;
+               font-family: 'Inter', sans-serif;
          }
       </style>
    </head>
 
-   <body>
-      <header>
-         <h1>Reyansh Goswami</h1>
-         <p>Full-Stack Developer | Computer Science @ Chandigarh University</p>
+   <body class="bg-[#f9f9f9] text-gray-700">
+      <header class="bg-white py-20 text-center shadow-sm">
+         <div class="container mx-auto px-4">
+               <h1 class="text-6xl font-bold text-indigo-600 mb-2">Reyansh Goswami</h1>
+               <p class="text-xl text-gray-600">Full-Stack Developer | Computer Science @ Chandigarh University</p>
+         </div>
       </header>
-
-      <section>
-         <h2>Objective</h2>
-         <p>
-            Driven full-stack developer and lifelong learner focused on building scalable, real-time systems that solve real-world problems. Passionate about deep understanding, clean architecture, and crafting collaborative digital experiences. Seeking to join a mission-aligned team where I can contribute meaningfully, learn relentlessly, and grow into a builder who leaves lasting impact.
-         </p>
-      </section>
-
-      <section>
-         <h2>Projects</h2>
-
-         <div class="project">
-            <div class="project-title">🎮 The Gaming Section (C++, Raylib)</div>
-            <ul>
-            <li>Created a desktop arcade app with Ping-Pong, Tetris, and Space Shooter — fully built using Raylib and modern C++</li>
-            <li>Led a team of 4 and implemented unified architecture with reusable input systems and game state handling</li>
-            </ul>
-         </div>
-
-         <div class="project">
-            <div class="project-title">💬 Real-Time Messaging Socket Server (Next.js, Express, Socket.io)</div>
-            <ul>
-            <li>Built WebSocket-based backend with presence tracking, typing indicators, graceful disconnects, and rate limiting</li>
-            <li>Used Prisma + PostgreSQL for persistent chat storage and scalable Express endpoints</li>
-            </ul>
-         </div>
-
-         <div class="project">
-            <div class="project-title">🦯 Smart Walking Stick for Visually Impaired (Arduino)</div>
-            <ul>
-            <li>Engineered an assistive walking stick using ultrasonic sensor + buzzer to provide audio obstacle feedback</li>
-            <li>Focused on accessibility and real-world usability with proximity-based alerts</li>
-            </ul>
-         </div>
-      </section>
-
-      <section>
-         <h2>Technical Skills</h2>
-         <ul>
-            <li><strong>Languages:</strong> C, C++, JavaScript, TypeScript</li>
-            <li><strong>Frameworks/Libraries:</strong> Raylib, React.js, Next.js, Node.js, Tailwind CSS, Next-Auth, Express.js, Socket.IO, Prisma, PostgreSQL</li>
-            <li><strong>Tools:</strong> VS Code, Visual Studio, Git/GitHub, Arduino IDE, MySQL</li>
-         </ul>
-      </section>
-
-      <section>
-         <h2>Core Strengths</h2>
-         <ul>
-            <li>Problem Solving</li>
-            <li>Rapid Learning</li>
-            <li>Deep Curiosity</li>
-            <li>Self-Driven</li>
-         </ul>
-      </section>
-
-      <section>
-         <h2>Certificates & Courses</h2>
-         <ul>
-            <li>CS50 – EdX</li>
-            <li>HTML, CSS, and JavaScript for Web Developers – Coursera</li>
-            <li>Introduction to CSS3 – Coursera</li>
-            <li>JavaScript & AJAX Web Apps – Coursera</li>
-         </ul>
-      </section>
-
-      <section>
-         <h2>Education</h2>
-         <table>
-            <thead>
-            <tr>
-               <th>Degree</th>
-               <th>Institution</th>
-               <th>Year</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-               <td>Computer Science</td>
-               <td>Chandigarh University</td>
-               <td>2023</td>
-            </tr>
-            <tr>
-               <td>Intermediate</td>
-               <td>Hare Krishna International School</td>
-               <td>2022</td>
-            </tr>
-            </tbody>
-         </table>
-      </section>
-
-      <section>
-         <h2>Connect with Me</h2>
-         <ul>
-            <li><a href="https://github.com/DANGEERJI" target="_blank">GitHub</a></li>
-            <li><a href="https://linkedin.com/in/reyanshgoswami8199" target="_blank">LinkedIn</a></li>
-         </ul>
-      </section>
-
-      <section>
-         <h2>Contact Me</h2>
-         <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required />
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-
-            <button type="submit">Submit</button>
-         </form>
-      </section>
-
+      <div class="container mx-auto px-4">
+         <section class="py-16">
+               <h2 class="text-4xl font-semibold border-l-4 border-indigo-600 pl-4 mb-8">Objective</h2>
+               <p class="text-lg text-gray-700 leading-relaxed">
+                  Driven full-stack developer and lifelong learner focused on building scalable, real-time systems that solve real-world problems. Passionate about deep understanding, clean architecture, and crafting collaborative digital experiences. Seeking to join a mission-aligned team where I can contribute meaningfully, learn relentlessly, and grow into a builder who leaves a lasting impact.
+               </p>
+         </section>
+         <section class="py-16">
+               <h2 class="text-4xl font-semibold border-l-4 border-indigo-600 pl-4 mb-8">Projects</h2>
+               <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                  <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                     <h3 class="text-2xl font-bold text-indigo-600 mb-2">🎮 The Gaming Section (C++, Raylib)</h3>
+                     <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                           <li>Created a desktop arcade app with Ping-Pong, Tetris, and Space Shooter — fully built using Raylib and modern C++</li>
+                           <li>Led a team of 4 and implemented unified architecture with reusable input systems and game state handling</li>
+                     </ul>
+                  </div>
+                  <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                     <h3 class="text-2xl font-bold text-indigo-600 mb-2">💬 Real-Time Messaging Server (Next.js, Express)</h3>
+                     <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                           <li>Built WebSocket-based backend with presence tracking, typing indicators, graceful disconnects, and rate limiting</li>
+                           <li>Used Prisma + PostgreSQL for persistent chat storage and scalable Express endpoints</li>
+                     </ul>
+                  </div>
+                  <div class="bg-white rounded-xl shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                     <h3 class="text-2xl font-bold text-indigo-600 mb-2">🦯 Smart Walking Stick (Arduino)</h3>
+                     <ul class="list-disc pl-6 space-y-1 text-gray-700">
+                           <li>Engineered an assistive walking stick using ultrasonic sensor + buzzer to provide audio obstacle feedback</li>
+                           <li>Focused on accessibility and real-world usability with proximity-based alerts</li>
+                     </ul>
+                  </div>
+               </div>
+         </section>
+         <section class="py-16">
+               <h2 class="text-4xl font-semibold border-l-4 border-indigo-600 pl-4 mb-8">Technical Skills</h2>
+               <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 text-lg text-gray-700">
+                  <div>
+                     <span class="font-bold text-indigo-600">Languages:</span> C, C++, JavaScript, TypeScript
+                  </div>
+                  <div>
+                     <span class="font-bold text-indigo-600">Frameworks/Libraries:</span> Raylib, React.js, Next.js, Node.js, Tailwind CSS, Express.js, Socket.IO, Prisma, PostgreSQL
+                  </div>
+                  <div>
+                     <span class="font-bold text-indigo-600">Tools:</span> VS Code, Visual Studio, Git/GitHub, Arduino IDE, MySQL
+                  </div>
+               </div>
+         </section>
+         <section class="py-16">
+               <h2 class="text-4xl font-semibold border-l-4 border-indigo-600 pl-4 mb-8">Certificates & Courses</h2>
+               <ul class="list-disc list-inside space-y-2 text-lg text-gray-700">
+                  <li>CS50 – EdX</li>
+                  <li>HTML, CSS, and JavaScript for Web Developers – Coursera</li>
+                  <li>Introduction to CSS3 – Coursera</li>
+                  <li>JavaScript & AJAX Web Apps – Coursera</li>
+               </ul>
+         </section>
+         <section class="py-16">
+               <h2 class="text-4xl font-semibold border-l-4 border-indigo-600 pl-4 mb-8">Education</h2>
+               <div class="overflow-x-auto">
+                  <table class="min-w-full table-auto text-gray-700 border border-gray-300 rounded-lg">
+                     <thead>
+                           <tr class="bg-gray-100 text-indigo-600">
+                              <th class="px-6 py-4 text-left text-lg font-bold">Degree</th>
+                              <th class="px-6 py-4 text-left text-lg font-bold">Institution</th>
+                              <th class="px-6 py-4 text-left text-lg font-bold">Year</th>
+                           </tr>
+                     </thead>
+                     <tbody class="divide-y divide-gray-300">
+                           <tr class="hover:bg-gray-200 transition-colors duration-200">
+                              <td class="px-6 py-4">Computer Science</td>
+                              <td class="px-6 py-4">Chandigarh University</td>
+                              <td class="px-6 py-4">2023</td>
+                           </tr>
+                           <tr class="hover:bg-gray-200 transition-colors duration-200">
+                              <td class="px-6 py-4">Intermediate</td>
+                              <td class="px-6 py-4">Hare Krishna International School</td>
+                              <td class="px-6 py-4">2022</td>
+                           </tr>
+                     </tbody>
+                  </table>
+               </div>
+         </section>
+         <section class="py-16">
+               <h2 class="text-4xl font-semibold border-l-4 border-indigo-600 pl-4 mb-8">Connect & Contact</h2>
+               <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                  <div>
+                     <h3 class="text-2xl font-bold text-indigo-600 mb-4">Connect with Me</h3>
+                     <ul class="space-y-4 text-lg">
+                           <li>
+                              <a href="https://github.com/DANGEERJI" target="_blank" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">
+                                 GitHub
+                              </a>
+                           </li>
+                           <li>
+                              <a href="https://linkedin.com/in/reyanshgoswami8199" target="_blank" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-200">
+                                 LinkedIn
+                              </a>
+                           </li>
+                     </ul>
+                  </div>
+                  <div>
+                     <h3 class="text-2xl font-bold text-indigo-600 mb-4">Send a Message</h3>
+                     <form class="space-y-6">
+                           <div>
+                              <label for="name" class="block font-medium text-gray-700 mb-1">Name</label>
+                              <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-800" />
+                           </div>
+                           <div>
+                              <label for="email" class="block font-medium text-gray-700 mb-1">Email</label>
+                              <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-800" />
+                           </div>
+                           <div>
+                              <label for="message" class="block font-medium text-gray-700 mb-1">Message</label>
+                              <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg bg-gray-100 border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-gray-800"></textarea>
+                           </div>
+                           <button type="submit" class="w-full md:w-auto px-8 py-3 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-700 transition-colors duration-200">
+                              Submit
+                           </button>
+                     </form>
+                  </div>
+               </div>
+         </section>
+      </div>
    </body>
 </html>
